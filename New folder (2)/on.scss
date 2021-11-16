@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+$Zen: "Zen Antique", serif;
+$poppins: "Poppins", sans-serif;
+$bit: "Space Mono", monospace;
+$blueBlack: #0b1d26;
+$blueLight: #39547f;
+
+$title64: 64px;
+$title18: 18px;
+
+* {
+    font-family: $poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(31deg, rgba(27, 27, 31, 1) 0%, rgba(40, 40, 48, 1) 44%, rgba(35, 43, 44, 1) 100%);
+    background: rgb(27, 27, 31);
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+}
+
+.drum-machine {
+    border: linear-gradient(110.54deg, rgba(225, 207, 207, 0.2) 9.7%, rgba(60, 56, 56, 0) 110.69%),
+        linear-gradient(0deg, #29282c, #29282c) 15px;
+    position: relative;
+    width: 863px;
+    height: 513px;
+    left: 25vw;
+    top: 15vh;
+    position: relative;
+    background: linear-gradient(110.54deg, rgba(225, 207, 207, 0.2) 9.7%, rgba(60, 56, 56, 0) 110.69%), #29282c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 26px 46px rgba(0, 0, 0, 0.71), 0px 4px 4px rgba(0, 0, 0, 0.25),
+        0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 28px;
+
+    //svg
+    .resetka {
+        position: absolute;
+        left: 59px;
+        top: 250px;
+    }
+    .puljke {
+        position: absolute;
+    }
+    .levo {
+        left: 45px;
+        top: 45px;
+    }
+    .desno {
+        right: 45px;
+        top: 45px;
+    }
+    .logo {
+        position: absolute;
+        bottom: 5px;
+        right: 42%;
+    }
+    .sraf {
+        position: absolute;
+    }
+    .gornji-levi {
+        left: 15px;
+        top: 25px;
+    }
+    .donji-levi {
+        left: 15px;
+        bottom: 15px;
+    }
+    .gornji-desni {
+        right: 15px;
+        top: 25px;
+    }
+    .donji-desni {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .drum-machine-power-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        position: absolute;
+        top: 125px;
+        left: 45px;
+
+        .on {
+            color: white;
+            font-family: $poppins;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 30px;
+            padding: 5px 15px 5px 15px;
+            background: #3fb308;
+            box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25), inset 0px -3px 4px #329404, inset 0px 4px 4px #225709;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .off {
+            color: white;
+            font-family: $poppins;
+            font-weight: bold;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 30px;
+            padding: 5px 15px 5px 15px;
+            background: #3fb308;
+            box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25), inset 0px -3px 4px #329404, inset 0px 4px 4px #225709;
+        }
+    }
+
+    .drum-machine-display {
+        font-family: $bit;
+        background: #48dd02;
+        box-shadow: inset 0px 4px 18px 8px #1f6200;
+
+        padding-left: 15px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: absolute;
+        left: 27%;
+        top: 30px;
+        width: 406px;
+        height: 75px;
+
+        border: 5px solid #696c5a;
+        box-sizing: border-box;
+
+        border-radius: 5px;
+    }
+
+    .drum-btn-group {
+        width: 522.09px;
+        height: 302.03px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 18%;
+        bottom: 10%;
+
+        .drum-btn {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 47px 35px;
+            font-weight: bold;
+
+            width: 141px;
+            height: 136px;
+            margin-left: 15px;
+            margin-bottom: 15px;
+            background: #929583;
+            border: 3px solid #423e3e;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+            border-radius: 17px;
+            &:hover {
+                background: #0eb246;
+                border: 3px solid #423e3e;
+                box-sizing: border-box;
+                box-shadow: 0px 1px 22px #329404, 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04),
+                    0px 0px 1px rgba(0, 0, 0, 0.04), inset 0px 4px 41px #5dff11;
+                border-radius: 17px;
+            }
+        }
+    }
+}
+
+//Hover za aktivan btn na dugme jbg overrajduje ga pa sam morao opet da dodam jes ruzno al jbg....mogao bi ina dve klase da podelim al me mrzi :)
+.key {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 47px 35px;
+    font-weight: bold;
+
+    width: 141px;
+    height: 136px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    background: #0eb246;
+    border: 3px solid #423e3e;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 22px #329404, 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04),
+        0px 0px 1px rgba(0, 0, 0, 0.04), inset 0px 4px 41px #5dff11;
+    border-radius: 17px;
+}
